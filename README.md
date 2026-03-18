@@ -15,3 +15,14 @@ This project demonstrates the implementation of a secure messaging pipeline betw
 
 ## 📊 Results & Verification
 The connection was successfully verified with a `SUCCESS: 0` reason code. [cite_start]Real-time messages were monitored through the **AWS MQTT Test Client**, ensuring a stable and encrypted data flow from the local machine to the AWS Cloud infrastructure. [cite: 2]
+---
+
+### 🖼️ Implementation Proof (Screenshots)
+
+**1. Edge Device Telemetry (Terminal Output):**
+This confirms the successful mTLS handshake and message publishing (QoS 1) from my local machine.
+![Device Terminal Output](device-terminal-output.png)
+
+**2. AWS Cloud Monitoring (MQTT Test Client):**
+Real-time verification of data reception on the AWS IoT Core broker for the `sdk/test/python` topic.
+![AWS IoT Test Client](aws-iot-test-client.png)
